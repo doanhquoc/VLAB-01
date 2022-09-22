@@ -1,0 +1,30 @@
+{% extends "PostWorking/base.html"%}
+{% block title %} Quốc {% endblock %}
+{% block content %}
+<h1>Đăng thông tin tuyển dụng</h1>
+<form action = "/main/" method = "post">
+    <label for="work_name">  Tên công việc</label><br>
+    <input id="work_name" type="text" name="work_name"><br>
+
+    <label for="company_name">Tên công ty</label><br>
+    <input id="company_name" type="text" name="company_name"><br>
+
+    <label >Vị trí ứng tuyển</label><br>
+    <input type="text"><br>
+
+    <lab>Mức lương</lab><br>
+    <input type="text"><br>
+
+    <lab>Mô tả công việc</lab><br>
+    <input type="text"><br>
+
+    <lab>Hình ảnh về công việc</lab><br>
+    <input type="image" src="WorkImages/DoAnhQuoc.png" alt="Submit" width="75" height="75"><br>
+    
+    <lab>Số điện thoại</lab><br>
+    <input type="tel" ><br>
+
+    <lab>Thời gian còn lại</lab><br>
+    <button type="submit", name="submit">submit</button>
+</form>
+{% endblock %}
